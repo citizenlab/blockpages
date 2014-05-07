@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link href="library/css/reset.css" media="screen" rel="stylesheet">
+    <link href="library/css/style.css" media="screen" rel="stylesheet">
+    <link rel="stylesheet" href="library/css/main.css"><!--[if IE 7]>  <link rel="stylesheet" href="library/css/ie7.css"> <script src="library/js/plugins/PIE_IE678.js"></script> <![endif]-->
+    <!--[if IE 8]>  <link rel="stylesheet" href="library/css/ie8.css"> 
+	<script src="library/js/plugins/PIE_IE678.js"></script> <![endif]-->
+    <!--[if gte IE 9]>  <link rel="stylesheet" href="library/css/ie9.css"> <![endif]-->
+    <script src="library/js/frameworks/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  </head>
+  <body>
+    <section id="content">
+      <section id="wrapper" style="display:block;" class="layout-container width-100">
+        <!-- START TRUSTED/UNTRUSTED MODULE-->
+        <!-- START REDIRECT SEARCH MODULE-->
+        <div class="layout-container redirect gutter">
+          <section class="contentContainer search fixIE">
+            <div class="gutter">
+				<div id="strict" style="display:none">&nbsp; has been blocked by BT Parental Controls because the account holder has Strict filters on.</div>
+				<div id="moderate" style="display:none">&nbsp; has been blocked by BT Parental Controls because the account holder has Moderate filters on.</div>
+				<div id="light" style="display:none">&nbsp; has been blocked by BT Parental Controls because the account holder has Light filters on.</div>
+				<div id="custom" style="display:none">&nbsp; has been blocked by BT Parental Controls because the account holder has Custom filters on.</div>
+				<div id="subscriberblacklist" style="display:none">&nbsp; has been blocked by BT Parental Controls because the account holder has blocked this particular site.</div>
+				<div id="homeworktime" style="display:none">&nbsp; has been blocked by BT Parental Controls because the account holder has Homework time on.</div>
+				<div id="globalblacklist" style="display:none">&nbsp; has been blocked by BT Parental Controls because the account holder has filters on.</div>
+				<div id="orginalurlnull"  style="display:none">&nbsp; has been blocked by BT Parental Controls.</div>
+				<div id="listparamnull"  class="pcHeader" style="display:none"><br>&nbsp; This site has been blocked by BT Parental Controls.</div>
+				<div  class="pcHeader" id="emptydiv" style="display:none">
+
+				</div>
+            </div>
+          </section>
+        </div>
+        <!-- END REDIRECT SEARCH MODULE          -->
+        <!-- START ACCESS PAGE MODULE-->
+        <div id="buttondisplay"  class="layout-container redirect gutter" style="display:none">
+          <section class="contentContainer accessPage fixIE">
+            <div class="gutter">
+              <p class="logIn"><a href="#" class="btnSubmit" onclick="redirectToAppsauthApp();createChange(window.location.href)">Allow access, if you are the account holder</a></p>
+              <div class="clear"></div>
+            </div>
+          </section>
+        </div>
+        <!-- END ACCESS PAGE MODULE-->
+        <!-- END TRUSTED/UNTRUSTED MODULE-->
+        <img class="smallLogo" src="library/images/logo_81x38.gif" alt="" width="65" height="30" />
+      </section>
+    </section>
+    <script src="library/js/frameworks/jquery.js"></script>
+    <script src="library/js/plugins/plugins.js"></script>
+    <script src="library/js/main.js"></script>
+    <script src="library/js/pluginManager.js"></script>
+    <script src="library/js/pc_new_js.js"></script>
+	<script src="library/js/jquery.base64.js"></script>
+  </body>
+  <script type="text/javascript" >
+		var s_pageName = "pan:pc:intercept:blocked:AH Access";
+		var s_channel = "Consumer";
+		var s_server="bt.com";
+		var s_hier1="pan,pc,intercept,blocked,AH Access";
+		var s_prop2="Rochdale";
+		var s_prop36="pan:pc:intercept:blocked:AH Access";
+		var s_prop37="pan:pc";
+		var s_prop38="pan:pc:intercept";
+		var s_prop39="pan:pc:intercept:blocked";
+		var s_eVar37=s_prop37;
+		var s_eVar38=s_prop38;		
+		var s_eVar39=s_prop39;
+		
+		function getCookie(cookiename) { 
+			var cookiestring=""+document.cookie;
+			var index1=cookiestring.indexOf(cookiename);
+			if (index1==-1 || cookiename=="") return "";
+			var index2=cookiestring.indexOf(';',index1);
+			if (index2==-1) index2=cookiestring.length;
+
+			return unescape(cookiestring.substring(index1+cookiename.length+1,index2));
+		} 
+		var smSessionValue = getCookie("SMSESSION");
+		var s_prop9 = (smSessionValue == null || smSessionValue == '' || smSessionValue == "LOGGEDOFF")?"Logged out":"Logged in";
+		var s_eVar36 = s_prop9;
+	</script>
+	<script	src="library/js/s_code_remote.js" language="javascript"></script>
+</html>
