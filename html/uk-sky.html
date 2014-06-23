@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Access Blocked</title>
+		<link href="css/default.css" rel="stylesheet" type="text/css" />
+		<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="http://www.sky.com/skycom/2141/images/favicon.ico" />
+		<script type="text/javascript" src="js/site.js"></script>
+                <script type="text/javascript">
+                  function showdomain() {
+                    var query = window.location.search.substring(1);
+                    if(query) {
+                      document.body.innerHTML = document.body.innerHTML.replace('<!-- SITE_NAME //-->',query+' ');
+                    }
+                  }
+                </script>
+
+	</head>
+	<body onload="showdomain(); setupCopyright(); setupFooterHeight();">
+		<div id="header">
+			<div class="width_wrapper">
+				<img id="logo" src="img/sky_logo.png" />
+			</div>
+			<div id="error_code">
+				<div class="width_wrapper">
+					<h1>Access Blocked</h1>
+				</div>
+			</div>
+		</div>
+		<div id="content" class="width_wrapper">
+			<h2>Sorry, this web site <!-- SITE_NAME //--> is not available through BSkyB.</h2>
+			<p>BSkyB is required by Court order to prevent access to this site in order to help protect against copyright infringement.</p>
+			<div id="information_links">
+				<div class="information_link">
+					<img class="inline" src="img/chevron.png"/><a class="blue_link" href="http://help.sky.com/security/privacy/our-approach-to-protecting-copyright/">More information on why this web site is blocked</a>
+				<div>
+				</div class="information_link">		
+					<img class="inline" src="img/chevron.png"/><a class="blue_link" href="http://sky.com">Go to Sky.com</a>
+				</div>		
+			</div>
+		</div>
+		<div id="footer">
+			<div class="width_wrapper">
+				<div id="copyright_wrapper" class="inline">
+					<span id="copyright"></span>
+				</div>
+				<div class="inline">
+					<div id="footer_links">
+						<a href="http://help.sky.com/my-account/terms-and-conditions/skycom-terms-and-conditions/">Terms &amp; Conditions</a>|
+						<a href="http://help.sky.com/security/privacy/privacy-and-cookies-notice">Privacy &amp; Cookies Notice</a>|
+						<a href="http://accessibility.sky.com/">Accessibility Information</a>|
+						<a href="http://contactus.sky.com/">Contact Us</a>|
+						<a href="http://www.sky.com/sitemap/">Site Map</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
