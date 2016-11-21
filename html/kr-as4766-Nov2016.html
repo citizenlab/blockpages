@@ -1,0 +1,14 @@
+<html><script>
+var arg = "http://warning.or.kr";
+var str = new Array();
+str = arg.split("&", 1);
+var a = new Array();
+a = str[0].split("=");
+var b = Math.floor(a[1] / 100);
+var c = new Array();
+if(b == 10){location.replace("http://www.naver.com");}
+else if(b == 20){location.replace("http://www.daum.net");}
+else if(b == 30){location.replace("http://www.paran.com");}
+else{ c = a[0].split("?");
+location.replace(c[0]);}
+</script></html>
